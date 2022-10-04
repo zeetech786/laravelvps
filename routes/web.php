@@ -44,6 +44,6 @@ Route::view('dashboard','layouts.dashboard')->name('dashboard.show');
 Route::view('/master','layouts.master');
 Route::view('/test','test');
 Route::get('/export', [CompanyController::class, 'export']);
-Auth::routes(['register' => false]);
+//Auth::routes(['register' => false]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
